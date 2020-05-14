@@ -1,11 +1,25 @@
 body{ 
 overflow:hidden; 
 background-color: rgb(15, 15, 48);
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
 } 
+
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  width: 82%;
+  margin: auto;
+}
+
+.title {
+text-align: center;
+margin-top: 3rem;
+}
+
+
+.content {
+  margin-top: 14rem;
+}
 
 #ball{
 	width: 50px;
