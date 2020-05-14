@@ -21,68 +21,42 @@ align-items: center;
 }
 
 #ball.animate {
-  animation: slideInDown 1s; 
-  -webkit-keyframes slideInDown {
-    from {
-      -webkit-transform: translate3d(0, -200%, 0);
-      transform: translate3d(0, -200%, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
   }
-  @keyframes slideInDown {
-    from {
-      -webkit-transform: translate3d(0, -200%, 0);
-      transform: translate3d(0, -200%, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+  @-webkit-keyframes bounceOutDown {
+  20% {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
   }
-  .animate__slideInDown {
-    -webkit-animation-name: slideInDown;
-    animation-name: slideInDown;
+  40%, 45% {
+  opacity: 1;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+  }
+  100% {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, 100px, 0);
+  }
+  }
+  @keyframes bounceOutDown {
+  20% {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+  opacity: 0.75;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 150px, 0);
+  transform: translate3d(0, 150px, 0);
+  }
   } 
-}
-
-@-webkit-keyframes slideInDown {
-from {
-  -webkit-transform: translate3d(0, -200%, 0);
-  transform: translate3d(0, -200%, 0);
-  visibility: visible;
-}
-
-to {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-}
-@keyframes slideInDown {
-from {
-  -webkit-transform: translate3d(0, -200%, 0);
-  transform: translate3d(0, -200%, 0);
-  visibility: visible;
-}
-
-to {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-}
-.animate__slideInDown {
--webkit-animation-name: slideInDown;
-animation-name: slideInDown;
-}
-
-}
-
-.slideInDown{
-    animation: slideInDown 1s; 
-}
