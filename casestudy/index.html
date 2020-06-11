@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="casestudy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>IDM 241: Case Study</title>
+</head>
+
+<body>
+    <h1 id="top"> Search Feature Microinteraction
+        <br> Case Study - Anna Leong
+    </h1>
+
+    <div class="nav">
+        <p>
+            <a href="#overview">Overview | </a>
+            <a href="#context">Context and Challenges | </a>
+            <a href="#process">Process and Insights | </a>
+            <a href="#solution">The Solution | </a>
+            <a href="#results">The Results</a>
+        </p>
+    </div>
+
+    <div class="section">
+
+        <h2 id="overview"> Overview </h2>
+        <p>
+            This the executive summary of your case study. It allows your prospects to quickly understand the highlights of your past work without reading the entire thing. This section should include the core takeaways from all other sections including the main
+            problem, an overview of the solution, and key results. This is typically written last, so that you can scan for the main points from each section below and summarize them into a one or two paragraph synopsis.
+        </p>
+
+    </div>
+
+    <div class="section">
+        <h2 id="context"> Context and Challenge </h2>
+        <p>
+            Background:
+            <br> This project was produced as an individual project for a class - specifically IDM 241; Microinteractions. The class teaches students to build upon HTML, CSS, and JavaScript skills to create a microinteraction(s).
+            <br>
+            <br> Description:
+            <br> What classifies as a microinteraction? A microinteraction includes four-five elements: a trigger(s), rule(s), feedback, and loops/modes. For my project, I decided to create a microinteraction that would animate a search feature based
+            on inspiration I found from Dribble.com. Upon clicking the search icon, the icon will lower itself and then open horizontally into a search bar with a text input field. After that, the user will be able to click the icon again to return the
+            icon to its original position. This is a microinteraction that I hope to sometime implement and put into a website of my own. The project as a whole was split into three parts: simple, medium, and complex microinteraction.
+            <br>
+            <br> Timeline:
+            <br> The timeline for the whole duration of this project was the course of ten weeks. There were various stages of the process - including an alpha, beta, and final. These all culminated into the whole project.
+            <br>
+            <br> Purpose:
+            <br> The purpose of this project was to enhance an element of an interaction, specifically the search function, of a website. This project also hoped to build upon and expand pre-existing knowledge of HTML, CSS, and JavaScript.
+            <br>
+            <br> The Problem:
+            <br> So far, my personal website does not have a search function. My project for IDM232 uses a search function, but it is currently not interactive. Creating a microinteraction like this would give me something to implement in my websites
+            that is engaging and interactive to my users instead of just remaining static.
+            <br>
+            <br> Goals & Objectives:
+            <br> The goals of this project were to create a fully functioning interactive search feature. The objectives include: users being able to click the search icon, the search text field opening horizontally, and the icon being able to close and
+            return to its original position.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 id="process"> Process and Insights </h2>
+
+        <p>
+            For the design process, I drew inspiration from Dribble. Here is the source to the reference that I wanted to build:
+            <a href="https://dribbble.com/shots/6740993-Search-Animation" target="_blank">Source example</a>
+            <br> The process of this project was divided up into three parts: simple, medium, and complex microinteraction to create the final result.
+            <br>
+            <br>
+            <br> 1. Simple Microinteraction: for this microinteraction, the goal was for the user to be able to click the search icon and have the icon bounce down once clicked. This project forced me to have a refresher on JavaScript. I tried to research
+            and look up alternative ways to implement an onclick function without having to use JavaScript, but finally gave in. It was a good review to need to use it. One of the biggest problems that I encountered when making this simple microinteraction
+            was how to get the animation to bounce down properly. There was always something wrong with the trigger where the trigger click would only work once the page is refreshed, and it would not have the bouncy animation effect I desired. fiAfter
+            researching and trying to find ways to troubleshoot, I tried switching the animation name from "bounceInDown" to "bounceOutDown" and this helped the animation out a lot. At first, the animation swooped down but in doing so it was too fast
+            and sort of disappeared/faed in the process. In the end, the bounceOutDown function somehow worked and produced a smooth drop to the icon animation. Here is the GIF for the Simple Microinteraction Build reference.
+            <img src="../alpha/graphics/simpleanimation.gif" alt="Simple Microinteraction GIF" class="center">
+            <br>
+            <br>
+            <br> 2. Medium Microinteraction: for this microinteraction, users can hover over the search icon and a search bar with a text input field opens horizontally. For this project, I looked for reference code in CodePen.io to find similar examples
+            of a search bar expanding. I added hover states to classes so that it triggered what I wanted the element to do when a user hovered over it. The two frustrations I had for this part of the project was trying to figure out to get the "Search"
+            text to display over the search bar instead of below it. I could not figure it out for the longest time! Finally, I tried margin-top with a negative number instead of positive. And it finally worked! Another huge frustration was trying to
+            get the search icon to stay within the search bar once it was expanded. When the screen or browser width was resized to be smaller, the search icon would clip down off of the search bar content. With the help of several media queries for the
+            search bar, I was able to adjust the width of the search bar. This solved the problem of having content be too wide and therefore not being contained in the search bar. Looking back, I feel like this microinteraction in itself was not hard
+            to put together. Instead, all the power held within the mind - of trying to troubleshoot, knowing what to search for to utilize sample code, and executing/manipulating the reference code into something that is what I desire. Here is the GIF
+            that visualizes this concept for the Medium Microinteraction Build.
+            <img src="../beta/graphics/betaanimation.gif" alt="Medium Microinteraction GIF" class="center">
+            <br>
+            <br>
+            <br> 3. Complex Microinteraction: for this microinteraction, the goal is for users to be able to click the search icon to drop down, then open horizontally to enter text into a text field. Users should then be able to click again to bring
+            the icon back to the original stage. Final build reference gif which consists of all of the animations put together:
+            <img src="../graphics/fullanimation.gif" alt="Microinteraction Gif" class="center">
+            <br> A huge part of this project was taking ideas I had of how it would work and doing research to troubleshoot. This section should elaborate on your design process. How did you go about developing the final solution. What were the steps
+            that will help the reader to visualize the work and, more importantly, to see that it was created by human beings. We want see how the final came into being, not just what the piece looks like at the end. These could include (but not limited
+            to) research: Target Audience / User Personas User Journeys Design Sketches Wireframes Style Guide Prototypes Code/Dev UX Testing Notes Final Project If this was a team based project, make sure to define your specific contributions to the
+            project. Be sure to include images / video for each stage of the process as appropriate.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 id="solution"> The Solution </h2>
+        <p>
+            <a href="../alpha/build/index.html" target="_blank">Alpha Build</a>
+            <br>
+            <a href="../beta/build/index.html" target="_blank">Beta Build</a>
+            <br>
+            <a href="../final/build/index.html" target="_blank">Final Build</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 id="results"> The Results </h2>
+        <p>
+            Overall, this project came out to be a success. I was able to implement the elements I had planned prior to the build process for each part of the project. I was able to cement my knowledge of JavaScript, as well as explore different CSS animation functions.
+            I was also able to grow better at using media queries, since I had several problems getting my site responsive enough or format correctly at all times. Comparing my alpha and beta builds, the search icon is differnt between the two. In the
+            future, I would have stuck with the same one or adjusted the other accordingly. I would also adjust the opacity or "drop" of the animation in the alpha build. Although it is fully functioning, if I were to refine it more, I would not have
+            the slight hiccip of the search icon bouncing up for a fraction of a second before dropping down. I also notice that in the reference GIF there is not so much variation to the search icon itself when it is bouncing down. It appears that there
+            is some opacity difference as the search icon comes down, however that is not the case in the beta build. Therefore with those things said, I would try to get the icon as smooth and seemless as possible, refining the animation and the opacity
+            of the element.
+
+
+
+        </p>
+    </div>
+
+    <div class="footer">
+        <br>
+        <a href="#top">Back to Top | </a> Leonna Designs, 2020
+    </div>
+</body>
+
+</html>
