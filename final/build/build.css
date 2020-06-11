@@ -1,0 +1,316 @@
+body {
+    overflow: auto;
+    background-color: rgb(15, 15, 48);
+    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.content {
+    margin: auto;
+    width: 82%;
+}
+
+.desc {
+    margin-top: 12rem;
+}
+
+.magnifying-glass {
+    font-size: 4em;
+    /* This controls the size. */
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border: 0.1em solid rgb(179, 96, 182);
+    position: relative;
+    border-radius: 0.35em;
+}
+
+.magnifying-glass::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: rgb(179, 96, 182);
+    width: 0.25em;
+    height: 0.08em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.searchBox {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.searchBall {
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    background: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.searchBox:hover>.searchInput {
+    width: 220px;
+    padding: 0 6px;
+}
+
+.searchBox:hover>.searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    /*width: 40px;*/
+    height: 40px;
+    border-radius: 50%;
+    border-color: white;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(179, 96, 182);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+#hovertext {
+    display: none;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: -2em;
+    padding: 5px;
+}
+
+.searchBox:hover #hovertext {
+    display: block;
+}
+
+.ball.animate {
+    -webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceOutDown {
+    20% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 75px, 0);
+        transform: translate3d(0, 80px, 0);
+    }
+}
+
+@keyframes bounceOutDown {
+    20% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 75px, 0);
+        transform: translate3d(0, 75px, 0);
+    }
+}
+
+body {
+    overflow: auto;
+    background-color: rgb(15, 15, 48);
+    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    width: 82%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.content {
+    margin: auto;
+    width: 82%;
+}
+
+.desc {
+    margin-top: 12rem;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    stroke: 2px rgb(44, 44, 44);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#ball.animate {
+    -webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceOutDown {
+    20% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 75px, 0);
+        transform: translate3d(0, 80px, 0);
+    }
+}
+
+@keyframes bounceOutDown {
+    20% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 75px, 0);
+        transform: translate3d(0, 75px, 0);
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .searchBox:hover>.searchInput {
+        width: 225px;
+        padding: 0 6px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .searchBox:hover>.searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    .searchBox {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #ffffff;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .searchBox:hover>.searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    .searchBox {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #ffffff;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .searchBox:hover>.searchInput {
+        width: 140px;
+        padding: 0 6px;
+    }
+    .searchBox {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #ffffff;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .searchBox:hover>.searchInput {
+        width: 125px;
+        padding: 0 6px;
+    }
+}
