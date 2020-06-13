@@ -14,7 +14,16 @@
     </h1>
     <div class="allcontent">
         <section class="accordion">
-            <input type="checkbox" name="collapse1" id="handle1" checked="checked">
+            <input type="checkbox" name="collapse" id="handle1" checked="checked">
+            <h2 class="handle">
+                <label for="handle1">Final Build</label>
+            </h2>
+            <div class="content">
+                <a href="build/index.html" target="_blank">Build page</a>
+            </div>
+        </section>
+        <section class="accordion">
+            <input type="checkbox" name="collapse2" id="handle2" checked="checked">
             <h2 class="handle">
                 <label for="handle1">Concept</label>
             </h2>
@@ -24,7 +33,7 @@
             </div>
         </section>
         <section class="accordion">
-            <input type="checkbox" name="collapse2" id="handle2">
+            <input type="checkbox" name="collapse3" id="handle3">
             <h2 class="handle">
                 <label for="handle2">Triggers</label>
             </h2>
@@ -35,34 +44,34 @@
             </div>
         </section>
         <section class="accordion">
-            <input type="checkbox" name="collapse3" id="handle3">
+            <input type="checkbox" name="collapse4" id="handle4">
             <h2 class="handle">
                 <label for="handle3">Rules</label>
             </h2>
             <div class="content">
                 <p>
-                    After the trigger, the search icon bounces down, the search bar with a text input field opens horizontally with "Search" shown, allowing the user to type. If the user wants to cancel his search, he can click the search icon for the the bar to close and
-                    go back up to the original position.
+                    After the trigger, the search icon bounces down. The search bar with a text input field opens horizontally with "Search" shown when the user goes to type in the field through hovering.
+
                 </p>
-            </div>
-        </section>
-        <section class="accordion">
-            <input type="checkbox" name="collapse4" id="handle4">
-            <h2 class="handle">
-                <label for="handle4">Feedback</label>
-            </h2>
-            <div class="content">
-                The user will visually see the rules applied and be able to interact by typing.
             </div>
         </section>
         <section class="accordion">
             <input type="checkbox" name="collapse5" id="handle5">
             <h2 class="handle">
+                <label for="handle4">Feedback</label>
+            </h2>
+            <div class="content">
+                The user will visually see the rules applied and be able to interact by typing. Additionally, the user will see a visual cue of the autofocus blinking indicating that the user can type.
+            </div>
+        </section>
+        <section class="accordion">
+            <input type="checkbox" name="collapse6" id="handle6">
+            <h2 class="handle">
                 <label for="handle5">Loops and Modes</label>
             </h2>
             <div class="content">
                 <p>
-                    This microinteraction does not loop, the mode is the "search" text with the text input field shown.
+                    This microinteraction does not loop, the mode is the "search" text with the text input field shown, and the autofocus blinking.
                 </p>
             </div>
         </section>
