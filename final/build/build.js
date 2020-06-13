@@ -1,8 +1,19 @@
 ball.onclick = function() {
+    console.log('ballclicked');
+
     ball.classList.add('animate');
 };
 
+ball.addEventListener("webkitAnimationEnd", myEndFunction);
 
-ball.onclick = function() {
-    ball.classList.add('animate');
-};
+function myEndFunction() {
+    console.log('animdone');
+    sball.classList.add('searchboxexpand');
+}
+
+function expandsearchfun() {
+    console.log("buttonclicked");
+    sball.classList.remove('searchBox');
+    sball.classList.add('searchboxexpand');
+
+}
