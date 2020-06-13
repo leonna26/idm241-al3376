@@ -1,4 +1,11 @@
 ball.onclick = function() {
-  ball.classList.add('animate');
+    console.log('ballclicked');
+
+    ball.classList.add('animate');
 };
 
+ball.addEventListener("webkitAnimationEnd", myEndFunction);
+
+function myEndFunction() {
+    console.log('animdone');
+}
